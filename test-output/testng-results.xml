@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-19T10:23:58 IST" name="Suite" finished-at="2023-10-19T10:24:32 IST" duration-ms="34113">
+    <groups>
+    </groups>
+    <test started-at="2023-10-19T10:23:58 IST" name="Functional Test" finished-at="2023-10-19T10:24:32 IST" duration-ms="34113">
+      <class name="com.infy.testcases.LoginLogout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:23:58 IST" name="setup" finished-at="2023-10-19T10:24:08 IST" duration-ms="10453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogIn(java.lang.String,java.lang.String)[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:24:08 IST" name="verifyLogIn" data-provider="loginData" finished-at="2023-10-19T10:24:12 IST" duration-ms="3658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogIn -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:24:12 IST" name="quit" finished-at="2023-10-19T10:24:12 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:24:12 IST" name="setup" finished-at="2023-10-19T10:24:23 IST" duration-ms="10408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogIn(java.lang.String,java.lang.String)[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:24:23 IST" name="verifyLogIn" data-provider="loginData" finished-at="2023-10-19T10:24:24 IST" duration-ms="1006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogIn -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:24:24 IST" name="quit" finished-at="2023-10-19T10:24:24 IST" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:24:24 IST" name="setup" finished-at="2023-10-19T10:24:32 IST" duration-ms="7349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginLogout()[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:24:32 IST" name="verifyLoginLogout" finished-at="2023-10-19T10:24:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginLogout -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogout@57a3af25]" started-at="2023-10-19T10:24:32 IST" name="quit" finished-at="2023-10-19T10:24:32 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.infy.testcases.LoginLogout -->
+    </test> <!-- Functional Test -->
+  </suite> <!-- Suite -->
+</testng-results>
