@@ -1,5 +1,6 @@
 package com.infy.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -16,6 +17,7 @@ public class LoginLogout extends Base {
 		parabankLoginPageObject=new ParabankLoginPageObject(driver);
 		String errorMessage=parabankLoginPageObject.loginIntoBank(username,password);
 		System.out.println(errorMessage);
+		Assert.assertEquals("An internal error has occurred and has been logged", errorMessage);
 	}
 	
 	@DataProvider(name="loginData")
