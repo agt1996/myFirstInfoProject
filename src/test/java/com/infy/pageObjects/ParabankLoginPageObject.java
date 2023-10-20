@@ -28,10 +28,11 @@ public class ParabankLoginPageObject extends Base {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String loginIntoBank(String username,String password) {
+	public String loginIntoBank(String username,String password) throws InterruptedException {
 		usernameEditBox.sendKeys(username);
 		passwordEditBox.sendKeys(password);
 		loginButton.click();
+		Thread.sleep(2000);
 		String errorMessag=errorMessage.getText();
 		return errorMessag;
 		

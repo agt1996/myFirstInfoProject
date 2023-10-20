@@ -13,11 +13,11 @@ public class LoginLogout extends Base {
 	
 	
 	@Test(dataProvider="loginData")
-	public void verifyLogIn(String username,String password) {
+	public void verifyLogIn(String username,String password) throws InterruptedException {
 		parabankLoginPageObject=new ParabankLoginPageObject(driver);
 		String errorMessage=parabankLoginPageObject.loginIntoBank(username,password);
 		System.out.println(errorMessage);
-		Assert.assertEquals("An internal error has occurred and has been logged", errorMessage);
+		Assert.assertEquals("An internal error has occurred and has been logged.", errorMessage);
 	}
 	
 	@DataProvider(name="loginData")
