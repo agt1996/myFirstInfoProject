@@ -6,7 +6,7 @@
       <class name="com.infy.testcases.LoginLogout">
         <methods>
           <include name="setup"/>
-          <include name="verifyLogIn"/>
+          <include name="verifyLogIn" invocation-numbers="0 1"/>
           <include name="quit"/>
         </methods>
       </class> <!-- com.infy.testcases.LoginLogout -->
