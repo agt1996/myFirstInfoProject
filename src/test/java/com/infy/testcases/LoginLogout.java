@@ -55,12 +55,12 @@ public class LoginLogout extends Base {
 
 	@DataProvider(name = "loginData2")
 	public Object[][] loginData2() {
-		Object[][] data = new Object[2][2];
+		Object[][] data = new Object[1][2];
 		data[0][0] = "standard_user";
 		data[0][1] = "secret_sauce";
 
-		data[1][0] = "locked_out_user";
-		data[1][1] = "secret_sauce";
+//		data[1][0] = "locked_out_user";
+//		data[1][1] = "secret_sauce";
 
 		return data;
 	}

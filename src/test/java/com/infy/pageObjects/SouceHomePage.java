@@ -37,8 +37,9 @@ WebDriver driver;
 		return true;
 	}
 	
-	public void logout() {
+	public void logout() throws InterruptedException {
 		menubar.click();
+		Thread.sleep(2000);
 		logoutBtn.click();
 	}
 	
