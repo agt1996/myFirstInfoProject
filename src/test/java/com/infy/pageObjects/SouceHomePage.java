@@ -1,5 +1,8 @@
 package com.infy.pageObjects;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,6 +20,12 @@ WebDriver driver;
 	
 	@FindBy(xpath="//*[@id='react-burger-menu-btn']")
 	private WebElement menubar;
+	
+	@FindBy(xpath="//div[@class='inventory_item_price']")
+	private List<WebElement> items;
+	
+	@FindBy(xpath="//*[@id='shopping_cart_container']/a")
+	private WebElement cartButton;
 	
 	@FindBy(xpath="//*[@id='logout_sidebar_link']")
 	private WebElement logoutBtn;
@@ -37,6 +46,19 @@ WebDriver driver;
 		return true;
 	}
 	
+	public void getItemsBelow10$() throws InterruptedException {
+		for(WebElement item:items) {
+			String priceString=item.getText();
+			double price=Double.parseDouble(priceString.replace("$", ""));
+			if(price<=10.00){
+				System.out.println(price);
+				item.findElement(By.xpath("..//button")).click();
+			}
+		}
+		Thread.sleep(3000);
+		cartButton.click();
+		
+	}
 	public void logout() throws InterruptedException {
 		menubar.click();
 		Thread.sleep(2000);
