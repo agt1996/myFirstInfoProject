@@ -1,7 +1,9 @@
 package com.infy.base;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,10 +37,31 @@ public class Base extends Utility {
 		
 	}
 	
+	public String getTitle() {
+		String title=driver.getTitle();
+		return title;
+	}
+	
+	public String getCurrentURL() {
+		String url=driver.getCurrentUrl();
+		return url;
+	}
+
+	
+	
 	@AfterMethod
 	public void quit() {
 		driver.close();
 		driver=null;
+	}
+	
+	public String readPropertiesFile(String key) throws IOException {
+		String pathOfPropertiesFile=System.getProperty("user.dir")+"\\Config.properties";
+		FileInputStream fis=new FileInputStream(pathOfPropertiesFile);
+		Properties pr=new Properties();
+		pr.load(fis);
+		String value=pr.getProperty(key);
+		return value;
 	}
 
 }
