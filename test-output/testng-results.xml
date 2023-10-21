@@ -2,20 +2,20 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-20T23:03:23 IST" name="Default suite" finished-at="2023-10-20T23:03:32 IST" duration-ms="9405">
+  <suite started-at="2023-10-21T09:45:34 IST" name="Default suite" finished-at="2023-10-21T09:45:42 IST" duration-ms="8780">
     <groups>
     </groups>
-    <test started-at="2023-10-20T23:03:23 IST" name="Default test" finished-at="2023-10-20T23:03:32 IST" duration-ms="9405">
+    <test started-at="2023-10-21T09:45:34 IST" name="Default test" finished-at="2023-10-21T09:45:42 IST" duration-ms="8780">
       <class name="com.infy.testcases.LoginLogout">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogout@4550bb58]" started-at="2023-10-20T23:03:23 IST" name="setup" finished-at="2023-10-20T23:03:29 IST" duration-ms="5784" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogout@4550bb58]" started-at="2023-10-21T09:45:34 IST" name="setup" finished-at="2023-10-21T09:45:39 IST" duration-ms="5566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginLogout()[pri:0, instance:com.infy.testcases.LoginLogout@4550bb58]" started-at="2023-10-20T23:03:29 IST" name="verifyLoginLogout" finished-at="2023-10-20T23:03:32 IST" duration-ms="3207" status="PASS">
+        <test-method signature="verifyLoginLogout()[pri:0, instance:com.infy.testcases.LoginLogout@4550bb58]" started-at="2023-10-21T09:45:39 IST" name="verifyLoginLogout" finished-at="2023-10-21T09:45:42 IST" duration-ms="2907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginLogout -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogout@4550bb58]" started-at="2023-10-20T23:03:32 IST" name="quit" finished-at="2023-10-20T23:03:32 IST" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogout@4550bb58]" started-at="2023-10-21T09:45:42 IST" name="quit" finished-at="2023-10-21T09:45:42 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
