@@ -46,16 +46,16 @@ public class LoginLogout extends Base {
 			System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++"+logo);
 			Assert.assertEquals("Swag Labs", logo);
 		}
-		else {
+		else if(getCurrentURL().equals(readPropertiesFile("DefaultURL"))) {
 			String error=souceloginPage.getErrorMessage();
-			System.out.println(error);
+			System.out.println("+===================="+error);
 		}
 		
 	}
 
 	@DataProvider(name = "loginData2")
 	public Object[][] loginData2() {
-		Object[][] data = new Object[2][2];
+		Object[][] data = new Object[3][2];
 		data[0][0] = "standard_user";
 		data[0][1] = "secret_sauce";
 

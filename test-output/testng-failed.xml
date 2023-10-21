@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.infy.testcases.OrderProductsBelow$10">
+      <class name="com.infy.testcases.LoginLogout">
         <methods>
           <include name="setup"/>
-          <include name="orderProductsbelow10$"/>
+          <include name="verifyLoginWithGivenCredentials"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- com.infy.testcases.OrderProductsBelow$10 -->
+      </class> <!-- com.infy.testcases.LoginLogout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
