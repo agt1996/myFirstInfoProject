@@ -8,7 +8,7 @@ import com.infy.base.Base;
 import com.infy.pageObjects.SouceHomePage;
 import com.infy.pageObjects.SouceloginPage;
 
-public class OrderProductsBelow$10 extends Base {
+public class E2EOrderProductsBelow$10 extends Base {
 	SouceloginPage souceloginPage;
 	SouceHomePage souceHomePage;
 	
@@ -18,7 +18,9 @@ public class OrderProductsBelow$10 extends Base {
 		souceloginPage.loginIntoBank(readPropertiesFile("LoginUsername"),readPropertiesFile("LoginPassword"));
 		souceHomePage = new SouceHomePage(driver);
 		if(getCurrentURL().equals(readPropertiesFile("HomePageURL"))) {
-			souceHomePage.getItemsBelow10$();
+			souceHomePage.addItemsToCartBelow10$();
+			souceHomePage.getListOfItemsInCart();
+			souceHomePage.verifyAmountIncart();
 		}
 		
 		

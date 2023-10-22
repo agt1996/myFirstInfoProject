@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="2" name="Functional Test">
     <classes>
-      <class name="com.infy.testcases.LoginLogout"/>
+      <class name="com.infy.testcases.LoginLogoutFunctionality"/>
+      <class name="com.infy.testcases.E2EOrderProductsBelow$10"/>
     </classes>
   </test> 
   </suite> 
