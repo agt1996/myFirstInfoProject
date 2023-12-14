@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.infy.testcases.LoginLogout">
+      <class name="com.infy.testcases.LoginLogoutFunctionality">
         <methods>
           <include name="setup"/>
-          <include name="verifyLoginWithGivenCredentials"/>
+          <include name="verifyLoginLogoutFunctionality"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- com.infy.testcases.LoginLogout -->
+      </class> <!-- com.infy.testcases.LoginLogoutFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
