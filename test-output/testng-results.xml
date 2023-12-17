@@ -1,85 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-21T18:21:32 IST" name="Default suite" finished-at="2023-10-21T18:21:57 IST" duration-ms="25791">
+  <suite started-at="2023-12-14T19:54:58 IST" name="Suite" finished-at="2023-12-14T19:55:16 IST" duration-ms="18374">
     <groups>
     </groups>
-    <test started-at="2023-10-21T18:21:32 IST" name="Default test" finished-at="2023-10-21T18:21:57 IST" duration-ms="25791">
-      <class name="com.infy.testcases.LoginLogout">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:32 IST" name="setup" finished-at="2023-10-21T18:21:38 IST" duration-ms="6688" status="PASS">
+    <test started-at="2023-12-14T19:54:58 IST" name="Functional Test" finished-at="2023-12-14T19:55:16 IST" duration-ms="18374">
+      <class name="com.infy.testcases.LoginLogoutFunctionality">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogoutFunctionality@9597028]" started-at="2023-12-14T19:54:58 IST" name="setup" finished-at="2023-12-14T19:55:10 IST" duration-ms="11777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithGivenCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:38 IST" name="verifyLoginWithGivenCredentials" data-provider="loginData2" finished-at="2023-10-21T18:21:41 IST" duration-ms="2793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyLoginLogoutFunctionality()[pri:0, instance:com.infy.testcases.LoginLogoutFunctionality@9597028]" started-at="2023-12-14T19:55:10 IST" name="verifyLoginLogoutFunctionality" finished-at="2023-12-14T19:55:15 IST" duration-ms="5563" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithGivenCredentials -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:41 IST" name="quit" finished-at="2023-10-21T18:21:41 IST" duration-ms="324" status="PASS">
+        </test-method> <!-- verifyLoginLogoutFunctionality -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogoutFunctionality@9597028]" started-at="2023-12-14T19:55:15 IST" name="quit" finished-at="2023-12-14T19:55:16 IST" duration-ms="912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:41 IST" name="setup" finished-at="2023-10-21T18:21:47 IST" duration-ms="5111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithGivenCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:47 IST" name="verifyLoginWithGivenCredentials" data-provider="loginData2" finished-at="2023-10-21T18:21:49 IST" duration-ms="2699" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithGivenCredentials -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:49 IST" name="quit" finished-at="2023-10-21T18:21:50 IST" duration-ms="369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:50 IST" name="setup" finished-at="2023-10-21T18:21:54 IST" duration-ms="4783" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithGivenCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:54 IST" name="verifyLoginWithGivenCredentials" data-provider="loginData2" finished-at="2023-10-21T18:21:57 IST" duration-ms="2701" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithGivenCredentials -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.infy.testcases.LoginLogout@223191a6]" started-at="2023-10-21T18:21:57 IST" name="quit" finished-at="2023-10-21T18:21:57 IST" duration-ms="239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.infy.testcases.LoginLogout -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.infy.testcases.LoginLogoutFunctionality -->
+    </test> <!-- Functional Test -->
+  </suite> <!-- Suite -->
 </testng-results>
